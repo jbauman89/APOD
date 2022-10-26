@@ -15,7 +15,7 @@ except:
 
 def apod():
             
-    rawUrlString = r"https://api.nasa.gov/planetary/apod?api_key=2uKl1okfWFnQwHwrEy6AexnrQASQddaHOMRuvJmI&count=1"
+    rawUrlString = r"https://api.nasa.gov/planetary/apod?api_key=[[[APIKEYGOESHERE]]]&count=1"
     data = requests.get(rawUrlString)
     jsonOut = json.loads(data.text)
     
